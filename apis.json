@@ -1,0 +1,44 @@
+{
+    "name": "TeamViewer",
+    "description": "Connect to remote computers, provide remote support, and collaborate online with TeamViewer, the world leader in remote desktop access and support.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1943-teamviewer.jpg",
+    "tags": [
+        "have api",
+        "teams"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/teamviewer\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "TeamViewer",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1943-teamviewer.jpg",
+            "humanURL": "http:\/\/www.teamviewer.com\/en\/index.aspx",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/teamviewer-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/teamviewer"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/TeamViewer"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.teamviewer.com\/en\/index.aspx"
+        }
+    ]
+}
