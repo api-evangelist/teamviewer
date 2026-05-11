@@ -1,0 +1,85 @@
+aid: teamviewer
+name: TeamViewer
+description: >-
+  TeamViewer is a global provider of remote connectivity, remote access, and
+  remote support software used by IT teams, MSPs, and enterprises to manage
+  devices, deliver IT support, and connect operational technology across
+  desktops, mobile devices, and IoT endpoints. The TeamViewer Web API is a
+  RESTful API that uses OAuth 2.0 bearer token authentication and JSON to
+  programmatically manage users, devices, groups, sessions, session reports,
+  and meetings within a TeamViewer company account.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Remote Access
+  - Remote Support
+  - Remote Desktop
+  - IT Management
+  - Endpoint Management
+  - Unified Endpoint Management
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/teamviewer/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: teamviewer:web-api
+    name: TeamViewer Web API
+    description: >-
+      RESTful Web API for managing TeamViewer users, devices, device groups,
+      sessions, session history, and meetings within a TeamViewer company
+      account. Authentication uses OAuth 2.0 bearer tokens (either script
+      tokens generated in the Management Console or tokens obtained via the
+      OAuth authorization flow).
+    humanURL: https://webapi.teamviewer.com/api/v1/docs/index
+    baseURL: https://webapi.teamviewer.com/api/v1
+    tags:
+      - Remote Access
+      - Remote Support
+      - Device Management
+      - User Management
+      - Session Reports
+    properties:
+      - type: Documentation
+        url: https://webapi.teamviewer.com/api/v1/docs/index
+      - type: Authentication
+        url: https://webapi.teamviewer.com/api/v1/docs/index#/Authentication
+  - aid: teamviewer:scim-api
+    name: TeamViewer SCIM API
+    description: >-
+      SCIM 2.0 API for automated user provisioning, deprovisioning, and
+      lifecycle management within a TeamViewer company, enabling integration
+      with identity providers such as Okta, Azure AD, and OneLogin.
+    humanURL: https://github.com/teamviewer/scim-api-docs
+    baseURL: https://webapi.teamviewer.com/api/v1/scim/v2
+    tags:
+      - SCIM
+      - Identity Management
+      - User Provisioning
+      - SSO
+    properties:
+      - type: Documentation
+        url: https://github.com/teamviewer/scim-api-docs
+      - type: GitHub
+        url: https://github.com/teamviewer/scim-api-docs
+
+common:
+  - type: Website
+    url: https://www.teamviewer.com
+  - type: Documentation
+    url: https://webapi.teamviewer.com/api/v1/docs/index
+  - type: Pricing
+    url: https://www.teamviewer.com/en/pricing/
+  - type: Sign Up
+    url: https://login.teamviewer.com/LogOn#register
+  - type: Support
+    url: https://www.teamviewer.com/en/global/support/
+  - type: Community
+    url: https://community.teamviewer.com
+  - type: GitHub Organization
+    url: https://github.com/teamviewer
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/teamviewer
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
