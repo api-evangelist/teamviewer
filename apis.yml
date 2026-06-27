@@ -70,7 +70,7 @@ common:
     url: https://webapi.teamviewer.com/api/v1/docs/index
   - type: Pricing
     url: https://www.teamviewer.com/en/pricing/
-  - type: SignUp
+  - type: Signup
     url: https://login.teamviewer.com/LogOn#register
   - type: Support
     url: https://www.teamviewer.com/en/global/support/
