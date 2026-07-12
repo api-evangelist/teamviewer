@@ -64,6 +64,10 @@ apis:
         url: https://github.com/teamviewer/scim-api-docs
 
 common:
+  - type: VulnerabilityDisclosure
+    url: security/teamviewer-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/teamviewer-domain-security.yml
   - type: Website
     url: https://www.teamviewer.com
   - type: Documentation
