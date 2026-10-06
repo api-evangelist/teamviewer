@@ -46,7 +46,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/teamviewer/refs/heads/main/apis.yml
 created: '2026-05-11'
-modified: '2026-05-11'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
   - aid: teamviewer:web-api
@@ -90,6 +90,8 @@ apis:
         url: https://github.com/teamviewer/scim-api-docs
 
 common:
+  - url: https://www.teamviewer.com/en-us/insights/
+    type: Blog
   - type: VulnerabilityDisclosure
     url: security/teamviewer-vulnerability-disclosure.yml
   - type: DomainSecurity
