@@ -1,0 +1,74 @@
+generated: '2026-10-13'
+method: searched
+checked:
+- https://aws.amazon.com/marketplace/
+- https://azuremarketplace.microsoft.com/
+marketplace_apps: []
+edges:
+- partner_name: AWS Marketplace
+  partner: amazon-web-services
+  partner_match: aggregator
+  type: marketplace
+  marketplace: aws-marketplace
+  channel: distribution
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://aws.amazon.com/marketplace/seller-profile?id=seller-atmlmjifqo22u
+  listing_count: 2
+  apps:
+  - TeamViewer Tensor
+  - TeamViewer for Frontline workers
+  seller_name: TeamViewer
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=TeamViewer%20Germany%20GmbH
+  listing_count: 7
+  apps:
+  - TeamViewer Frontline - Enterprise Augmented Reality
+  - Tensor Professional services
+  - TeamViewer Remote - Secure Remote Access and IT Support
+  - TeamViewer Digital Employee Experience (DEX) Platform
+  - TeamViewer Tensor - Engineered for Enterprises
+  seller_name: TeamViewer Germany GmbH
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=TeamViewer
+  listing_count: 3
+  apps:
+  - TeamViewer Frontline Professional Services
+  - TeamViewer Tensor Professional Services
+  - TeamViewer DEX Professional services
+  seller_name: TeamViewer
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Teamviewer%20Germany%20GmbH
+  listing_count: 1
+  apps:
+  - Teamviewer Host for Windows
+  seller_name: Teamviewer Germany GmbH
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
