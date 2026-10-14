@@ -3,6 +3,7 @@ method: searched
 checked:
 - https://aws.amazon.com/marketplace/
 - https://azuremarketplace.microsoft.com/
+- https://marketplace.atlassian.com/
 marketplace_apps: []
 edges:
 - partner_name: AWS Marketplace
@@ -72,3 +73,21 @@ edges:
   seller_name: Teamviewer Germany GmbH
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
+- partner_name: Atlassian Marketplace
+  partner: atlassian
+  partner_match: aggregator
+  type: marketplace
+  marketplace: atlassian
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  evidence: https://marketplace.atlassian.com/vendors/1211699/teamviewer-germany-gmbh
+  listing_count: 2
+  apps:
+  - TeamViewer for Jira Cloud
+  - TeamViewer for Jira Datacenter
+  publisher_name: TeamViewer Germany GmbH
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+source:
+- https://marketplace.atlassian.com/
