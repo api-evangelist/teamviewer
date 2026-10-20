@@ -120,3 +120,16 @@
     detected: '2026-10-20'
   status: not-a-workflow
   arazzo: null
+- slug: teamviewer-jamf-own
+  label: JAMF (own)
+  partner: jamf
+  partner_name: JAMF (own)
+  category: Configuration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.jamf.com/details/teamviewer
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
