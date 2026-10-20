@@ -1,11 +1,13 @@
 generated: '2026-10-13'
 method: searched
 checked:
+- freshworks/integrations/freshworks-integration-edges.yml
 - google-workspace/integrations/google-workspace-integration-edges.yml
 - https://aws.amazon.com/marketplace/
 - https://azuremarketplace.microsoft.com/
 - https://marketplace.atlassian.com/
 - microsoft-teams/integrations/microsoft-teams-integration-edges.yml
+- zendesk/integrations/zendesk-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: AWS Marketplace
@@ -91,6 +93,24 @@ edges:
   publisher_name: TeamViewer Germany GmbH
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
+- partner_name: Freshworks (own)
+  partner: freshworks
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.freshworks.com/apps/teamviewer_enterprise_integration-for-freshservice
+  mirror_of: freshworks/integrations/freshworks-integration-edges.yml
+  apps:
+  - TeamViewer Enterprise Integration
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  publisher_verified:
+  - Verified by Freshworks
 - partner_name: Google Workspace (own)
   partner: google-workspace
   partner_match: mirror
@@ -127,5 +147,22 @@ edges:
   category: Microsoft Teams app
   publisher_verified:
   - Microsoft 365 Certified
+- partner_name: Zendesk (own)
+  partner: zendesk
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.zendesk.com/marketplace/apps/support/23614/teamviewer/
+  mirror_of: zendesk/integrations/zendesk-integration-edges.yml
+  apps:
+  - TeamViewer
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: IT and HR
 source:
 - https://marketplace.atlassian.com/
