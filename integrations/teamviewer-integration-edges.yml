@@ -11,6 +11,9 @@ checked:
 - microsoft-teams/integrations/microsoft-teams-integration-edges.yml
 - zendesk/integrations/zendesk-integration-edges.yml
 - jamf/integrations/jamf-integration-edges.yml
+- https://api.first.org/data/v1/teams
+- https://raw.githubusercontent.com/CVEProject/cve-website/dev/src/assets/data/CNAsList.json
+- https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
 marketplace_apps: []
 edges:
 - partner_name: AWS Marketplace
@@ -214,5 +217,71 @@ edges:
   detected: '2026-10-20'
   detected_by: mirror-platform-listings.py
   category: Configuration
+- partner_name: CVE Program (CVE Numbering Authorities)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.cve.org/PartnerInformation/ListofPartners/partner/TeamViewer
+  category: Vulnerability disclosure (CVE Numbering Authority)
+  contract_reference:
+    register: CVE Program CNA list (github.com/CVEProject/cve-website CNAsList.json @ 239d3d9b68e0)
+    standard: CVE Program CNA Operational Rules (CVE Numbering Authority)
+    spec_file: null
+    role: cve-numbering-authority
+    registered_name: TeamViewer Germany GmbH
+    matched_domain: teamviewer.com
+    matched_by: domain
+    cna_id: CNA-2021-0060
+    cna_short_name: TeamViewer
+    cna_types:
+    - Vendor
+    cna_roles:
+    - CNA
+    scope: TeamViewer and 1E issues only.
+    top_level_root: MITRE Corporation
+    root: n/a
+    security_advisories:
+    - https://www.teamviewer.com/en/trust-center/security-bulletins/
+    disclosure_policy:
+    - https://vdp.teamviewer.com
+    country: Germany
+    signal_note: listing as a CVE Numbering Authority = participation (a public commitment to assign CVE IDs and
+      publish advisories for its scope); never a count of CVEs
+    detected_by: sweep-vulnerability-disclosure-cna.py
+    detected: '2026-10-22'
+  detected_by: sweep-vulnerability-disclosure-cna.py
+  first_seen: '2026-10-22'
+- partner_name: FIRST (Forum of Incident Response and Security Teams)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.first.org/members/teams/teamviewer_sirt
+  category: Incident response / PSIRT (FIRST member team)
+  contract_reference:
+    register: FIRST member teams (api.first.org/data/v1/teams, public JSON API)
+    standard: FIRST (Forum of Incident Response and Security Teams) membership
+    spec_file: null
+    role: first-member-team
+    registered_name: TeamViewer Germany GmbH
+    matched_domain: teamviewer.com
+    matched_by: domain
+    teams:
+    - id: teamviewer_sirt
+      team: TeamViewer SIRT
+      team_type: PSIRT, CSIRT
+      member_since: July 21, 2021
+      country: DE
+    signal_note: FIRST full membership of an incident-response / product-security team = participation; team_type
+      names CSIRT / PSIRT / SOC; never a count
+    detected_by: sweep-vulnerability-disclosure-cna.py
+    detected: '2026-10-22'
+  detected_by: sweep-vulnerability-disclosure-cna.py
+  first_seen: '2026-10-22'
 source:
 - https://marketplace.atlassian.com/
